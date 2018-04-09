@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	margin: 0;
+	padding: 0;
+} 
+body {	
+	margin: 0;
+	padding: 0;
+	font-family: 'Andika';
+	font-size: 18px;	
+}
+nav {	
+	width: 100%;
+		height: 170px;           /*   TEST   MENU    */
+	background-color: #596d02;
+	line-height: 70px;
+	margin: auto;
+}
+ul {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 0;	
+	list-style-type:  none;	
+	padding-right: 15%;
+}
+li {
+	display: inline-block;	
+	margin-left: 10px;	
+}
+a {
+	color: #fff;
+	text-decoration: none;	
+}
+a:hover {
+	color: #FA8072;
+}
+/*  ----   menu déroulant pour Nos recettes et menu pour Mobile  ----  */
+
+.menuRecettes {
+	/*display: none;       afficher une fois fini   */
+}
+.menuRecette li {
+	list-style-type: none;
+	width: 100%;
+	float: right;	
+	position: relative;
+}
+.menuRecette a {
+	color: #FA8072;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+   /*   menu  Mobile    */
+ul .menuMobil {
+	display: none;
+} 
+
+/*     ----  fin  des  menus  ----    */
+
+header #imgNav {
+	margin-top: -8px;	
+	width: 100%;	
+}
+header .titreNav {	
+	margin-top: -400px;
+	margin-left: 15%;
+	font-family: 'BioRhyme Expanded';	
+	color: #596d02;		
+	text-transform: uppercase;
+			
+}
+main {
+	width: 70%;
+	margin: auto;
+}
+.banner {
+	margin-top: 360px;	
+}
+.info {		
+	font-family: 'BioRhyme Expanded';
+	margin: 0 auto 0;
+	text-align: center;
+	color: #FA8072;
+	letter-spacing: 1px;
+}
+hr {	
+	background-color: #596d02;
+	width: 100%;
+	height: 1px;
+}
+#container1 {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;	
+}
+.imgPresentation {
+	width: 30%;
+	padding: 0 auto 0;
+}
+.imgPresentation img {
+	width: 200px;	
+}
+.presentation {
+	width: 70%;
+	text-align: right;
+}
+#container2 {
+	margin-top: 25px;
+}
+#container3 {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+	margin: 40px auto 40px;
+}
+#container3 img {
+	width: 200px;
+}
+footer {
+	height: 70px;
+	background-color: #596d02;
+}
+#recette {	
+	margin: 50px auto 30px;	
+	text-align: justify;
+}
+#container4 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 60px auto 50px;	
+}
+.imgRecette {
+	width: 40%;
+	margin-top: 20px;
+	padding-right: 20px;	
+}
+.imgRecette img {
+	width: 450px;
+}
+.recette {
+	width: 60%;
+	margin: 0px auto 10px;	
+	text-align: right;	
+}
+.footer {
+	margin-left: 10px;	
+	margin-bottom: 0;
+	color: #FA8072; 
+}
+#container5 {
+	padding-right: 15%;
+	display: flex;
+	justify-content: flex-end;	
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+nav {	
+	width: 100%;
+	height: 70px;
+	background-color: #596d02;
+	line-height: 70px;
+	margin: auto;
+}
+ul {
+	display: none;
+}
+ul .menuMobil {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 0;
+}
+ul .menuMobil li {
+	display: inline-block;	
+	margin-left: 5px;	
+}
+header #imgNav {
+	margin-top: -8px;	
+	width: 100%;	
+}
+header .titreNav {	
+	font-size: 23px;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: 'BioRhyme Expanded';	
+	color: #596d02;		
+	text-transform: uppercase;			
+}
+main {
+	width: 100%;
+	margin: auto;
+}
+.banner {
+	margin-top: 20px;	
+}
+.info {		
+	font-family: 'BioRhyme Expanded';
+	margin: 0 auto 0;
+	text-align: center;
+	color: #FA8072;	
+}
+hr {	
+	background-color: #596d02;
+	width: 90%;
+	height: 1px;
+}
+#container1 {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;	
+}
+.imgPresentation {
+	width: 20%;
+	padding-top: 50px;
+	padding-left: 5%;	
+}
+.imgPresentation img {
+	width: 150px;		
+}
+.presentation {
+	width: 80%;
+	text-align: right;
+	padding-right: 5%;
+}
+#container2 {
+	margin-top: 25px;
+}
+#container3 {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;	
+	margin: 40px auto 40px;
+}
+#container3 img {
+	width: 400px;
+}
+#recette {	
+	margin: 50px auto 30px;	
+	text-align: justify;
+}
+#container4 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	margin: 50px auto 50px;		
+}
+.imgRecette {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+.imgRecette img {
+	width: 350px;
+	padding-left: 5px;
+	
+}	
+.recette {
+	width: 50%;
+	margin: auto;	
+	text-align: justify;	
+}
+#container5 {
+	padding-right: 5%;
+	display: flex;
+	justify-content: flex-end;	
+}	
+}
+
+@media screen and (max-width: 1024px) {
+	
+}
+
+
+
