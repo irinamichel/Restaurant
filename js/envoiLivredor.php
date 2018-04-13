@@ -1,29 +1,17 @@
 <?php
 
-
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-
-    echo "Votre réservation :<br><br>";
     echo "Nom Prénom : ";
     echo $_POST['user_name'];
     echo "<br><br>E-mail : ";
-    echo "<br><br>Téléphone : ";
-    echo $_POST['user_telephone'];
-  /*  echo "<br><br>Pour le ";
-    echo $_POST['user_jour'];
-    echo " à ";
-    echo $_POST['user_heure'];  */
-    echo "<br><br>Demande : ";
+    echo "<br><br>Message : ";
     echo $_POST['user_message'];  
 
         
     $user_name = $_POST['user_name'];
     $user_mail = $_POST['user_mail'];
-    $user_telephone = $_POST['user_telephone'];
-    $user_jour = $_POST['user_jour'];
-    $user_heure = $_POST['user_heure'];
     $user_message = $_POST['user_message']; 
     
             // connexion à la BDD
@@ -40,11 +28,9 @@ ini_set('display_errors', 1);
         
         // On ajoute une entrée dans la table user
    // $exec = $bdd->exec('INSERT INTO user(nom, mail, telephone, jour, heure, message) VALUES('.$user_name.','.$user_telephone.','.$user_jour.','.$user_heure.','.$user_message.')');
-   if($bdd->exec("INSERT INTO user (nom, mail, telephone, message) VALUES('".$user_name."', '".$user_mail."', '".$user_telephone."', '".$user_message."')")){
-           echo "<br><br>Votre commande a bien été enregistrée";
+   if($bdd->exec("INSERT INTO user (nom, mail, message) VALUES('".$user_name."', '".$user_mail."', '".$user_message."')")){
+           echo "<br><br>Votre message a bien été envoyé. MERCI !";
    }else{
-           echo "Aie, erreur dans l'enregistrement";
+           echo "Aie, erreur dans l'envoi";
    }
 ?>
-
-
