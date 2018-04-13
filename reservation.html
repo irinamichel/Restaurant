@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>	
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fabrique du petit mangé</title> 
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme Expanded" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css"> 
+	
+	<script>
+		function changerCouleur(elm) {
+    		elm.setAttribute('style', 'border-color: yellow; box-shadow: 4px 3px 3px yellow;');
+		}	
+		function remettreNormalement(elm) {
+    		elm.setAttribute('style', 'border:;');   
+		}		
+	</script>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="#">Nos recettes</a>
+				<ul class="menuRecettes">
+					<li><a href="mardi.html" class="jour">Mardi</a></li>
+					<li><a href="mercredi.html" class="jour">Mercredi</a></li>
+					<li><a href="jeudi.html" class="jour">Jeudi</a></li>
+					<li><a href="vendredi.html" class="jour">Vendredi</a></li>
+					<li><a href="samedi.html" class="jour">Samedi</a></li>
+					<li><a href="dimanche.html" class="jour">Dimanche</a></li>				
+				</ul>  
+			</li>			
+			<li><a href="#">Fournisseurs</a></li>
+			<li><a href="reservation.html">Réservation</a></li>
+			<li><a href="livreDor.html">Livre d'or</a></li>		
+		</ul>	
+	<!--	<ul class="menuMobil">
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#">Nos recettes</a>
+				<ul class="menuRecettes">
+					<li><a href="mardi.html">Mardi</a></li>
+					<li><a href="mercredi.html">Mercredi</a></li>
+					<li><a href="jeudi.html">Jeudi</a></li>
+					<li><a href="vendredi.html">Vendredi</a></li>
+					<li><a href="samedi.html">Samedi</a></li>
+					<li><a href="dimanche.html">Dimanche</a></li>				
+			     </ul>  
+			</li>			
+			<li><a href="#">Fournisseurs</a></li>
+			<li><a href="#">Réservation</a></li>
+			<li><a href="#">Livre d'or</a></li>		
+		</ul>  -->
+	</nav>
+	
+	<main>	
+		<div id="container6">
+
+			<h3 class="client">Faire une réservation</h3>
+			<hr>
+
+			<form id="contact" action="js/validationResa.php" method="post">
+			
+				<div class="form">
+					<label for="name">Nom Prénom :</label>
+					<input type="text" id="name" onclick="changerCouleur(this)" onblur="remettreNormalement(this)" name="user_name" required>
+				</div>
+				<div class="form">
+					<label for="mail">E-mail :</label>
+					<input type="email" id="mail"onclick="changerCouleur(this)" onblur="remettreNormalement(this)" name="user_mail" required>
+				</div>
+				<div class="form">
+					<label for="telephone">Téléphone :</label>
+					<input type="tel" id="telephone" onclick="changerCouleur(this)" onblur="remettreNormalement(this)" name="user_telephone" required>
+				</div>
+		<!--		<div class="form">  
+					<label for="date">Jour :</label>
+					<input type="date" id="jour" onclick="changerCouleur(this)" onblur="remettreNormalement(this)" name="user_jour" required>
+				</div>  
+				<div class="form">
+					<label for="heure">Heure :</label>
+					<input type="time" id="heure" onclick="changerCouleur(this)" onblur="remettreNormalement(this)" name="user_heure" required>
+				</div>  -->
+				<div>
+					<label for="msg">Message :</label>
+					<textarea rows="5" cols="40" id="msg" onclick="changerCouleur(this)" onblur="remettreNormalement(this)" name="user_message"></textarea>
+				</div>
+				<div class="button">
+					<button type="submit">Envoyer le message</button>
+				</div>			
+			</form>   
+		</div>     
+	</main>
+	
+	<footer>
+		<div id="container5">
+			<h4 class="footer"> © La Fabrique du petit mangé</h4>
+			<h4 class="footer"><a href="#">Mentions légales</a></h4>
+		</div>	
+	</footer>	
+</body>
+</html>

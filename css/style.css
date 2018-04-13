@@ -164,6 +164,38 @@ footer {
 	display: flex;
 	justify-content: flex-end;	
 }
+#container6 {
+	margin: 20px auto 70px;
+	padding: 0 15% 0;
+}
+.client {
+	text-align: center;
+	margin-top: 50px;
+}
+#contact {
+	margin: 20px auto 50px;
+	padding: 0 15% 0;
+}
+label {	
+	width: 200px;
+}
+input, textarea {
+	float: right;
+	width: 300px;
+}
+input:valid {
+	border-color: green;	
+}
+.button {
+	margin-top: 30px;
+}
+button {
+	margin-top: 50px;
+}
+.form {
+	height: 40px;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {

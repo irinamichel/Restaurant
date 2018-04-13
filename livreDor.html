@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>	
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fabrique du petit mangé</title> 
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme Expanded" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">     
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="#">Nos recettes</a>
+				<ul class="menuRecettes">
+					<li><a href="mardi.html" class="jour">Mardi</a></li>
+					<li><a href="mercredi.html" class="jour">Mercredi</a></li>
+					<li><a href="jeudi.html" class="jour">Jeudi</a></li>
+					<li><a href="vendredi.html" class="jour">Vendredi</a></li>
+					<li><a href="samedi.html" class="jour">Samedi</a></li>
+					<li><a href="dimanche.html" class="jour">Dimanche</a></li>				
+				</ul>  
+			</li>			
+			<li><a href="#">Fournisseurs</a></li>
+			<li><a href="reservation.html">Réservation</a></li>
+			<li><a href="livreDor.html">Livre d'or</a></li>		
+		</ul>	
+	<!--	<ul class="menuMobil">
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#">Nos recettes</a>
+				<ul class="menuRecettes">
+					<li><a href="mardi.html">Mardi</a></li>
+					<li><a href="mercredi.html">Mercredi</a></li>
+					<li><a href="jeudi.html">Jeudi</a></li>
+					<li><a href="vendredi.html">Vendredi</a></li>
+					<li><a href="samedi.html">Samedi</a></li>
+					<li><a href="dimanche.html">Dimanche</a></li>				
+			     </ul>  
+			</li>			
+			<li><a href="#">Fournisseurs</a></li>
+			<li><a href="#">Réservation</a></li>
+			<li><a href="#">Livre d'or</a></li>		
+		</ul>  -->
+	</nav>
+	
+	<main>
+			<div id="container7">
+
+					<h3 class="client">Livre d'or</h3>
+					<hr>					
+					<br>
+							
+					<form id="contact" action="/ma-page-de-traitement" method="post">
+					
+						<div class="form">
+							<label class="infoContact" for="name">Nom Prénom :</label>
+							<input type="text" id="name" name="user_name" required>
+						</div>
+						<div class="form">
+							<label for="mail">E-mail :</label>
+							<input type="email" id="mail" name="user_mail" required>
+						</div>						
+						<div>
+							<label for="msg">Message :</label>
+							<textarea id="msg" rows="10" cols="50" name="user_message" required></textarea>
+						</div>						
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="button">
+							<button type="submit">Envoyer le message</button>
+						</div>			
+					</form>   
+				</div>     	
+        
+        
+	</main>
+	
+	<footer>
+		<div id="container5">
+			<h4 class="footer"> © La Fabrique du petit mangé</h4>
+			<h4 class="footer"><a href="#">Mentions légales</a></h4>
+		</div>	
+	</footer>	
+</body>
+</html>
